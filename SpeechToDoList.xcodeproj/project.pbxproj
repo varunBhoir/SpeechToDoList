@@ -13,6 +13,9 @@
 		1245602D2604824000A93D9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1245602C2604824000A93D9D /* Preview Assets.xcassets */; };
 		1245602F2604824000A93D9D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245602E2604824000A93D9D /* Persistence.swift */; };
 		124560322604824000A93D9D /* SpeechToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 124560302604824000A93D9D /* SpeechToDoList.xcdatamodeld */; };
+		12F454692604B609009E96B6 /* MicMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F454682604B609009E96B6 /* MicMonitor.swift */; };
+		12F4546D2604BDD6009E96B6 /* VisualBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F4546C2604BDD6009E96B6 /* VisualBarView.swift */; };
+		12F454712604BFEE009E96B6 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F454702604BFEE009E96B6 /* SpeechManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		1245602E2604824000A93D9D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		124560312604824000A93D9D /* SpeechToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpeechToDoList.xcdatamodel; sourceTree = "<group>"; };
 		124560332604824000A93D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F454682604B609009E96B6 /* MicMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicMonitor.swift; sourceTree = "<group>"; };
+		12F4546C2604BDD6009E96B6 /* VisualBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBarView.swift; sourceTree = "<group>"; };
+		12F454702604BFEE009E96B6 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				124560252604823C00A93D9D /* SpeechToDoListApp.swift */,
-				124560272604823C00A93D9D /* ContentView.swift */,
+				12F4546F2604BFA5009E96B6 /* SpeechToTextHelper */,
+				12F454672604B5DF009E96B6 /* SpeechVisualiser */,
+				12F454662604B5CB009E96B6 /* Views */,
 				124560292604824000A93D9D /* Assets.xcassets */,
 				1245602E2604824000A93D9D /* Persistence.swift */,
 				124560332604824000A93D9D /* Info.plist */,
@@ -73,6 +81,31 @@
 				1245602C2604824000A93D9D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12F454662604B5CB009E96B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				124560272604823C00A93D9D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12F454672604B5DF009E96B6 /* SpeechVisualiser */ = {
+			isa = PBXGroup;
+			children = (
+				12F454682604B609009E96B6 /* MicMonitor.swift */,
+				12F4546C2604BDD6009E96B6 /* VisualBarView.swift */,
+			);
+			path = SpeechVisualiser;
+			sourceTree = "<group>";
+		};
+		12F4546F2604BFA5009E96B6 /* SpeechToTextHelper */ = {
+			isa = PBXGroup;
+			children = (
+				12F454702604BFEE009E96B6 /* SpeechManager.swift */,
+			);
+			path = SpeechToTextHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F4546D2604BDD6009E96B6 /* VisualBarView.swift in Sources */,
+				12F454692604B609009E96B6 /* MicMonitor.swift in Sources */,
 				1245602F2604824000A93D9D /* Persistence.swift in Sources */,
 				124560322604824000A93D9D /* SpeechToDoList.xcdatamodeld in Sources */,
 				124560282604823C00A93D9D /* ContentView.swift in Sources */,
 				124560262604823C00A93D9D /* SpeechToDoListApp.swift in Sources */,
+				12F454712604BFEE009E96B6 /* SpeechManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
